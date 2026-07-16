@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: myoadapt
       POSTGRES_DB: myoadapt
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -23,15 +23,15 @@ services:
     environment:
       COLLECTOR_OTLP_ENABLED: "true"
     ports:
-      - "16686:16686" # UI
-      - "4318:4318" # OTLP HTTP
+      - "127.0.0.1:16686:16686" # UI
+      - "127.0.0.1:4318:4318" # OTLP HTTP
 
   identity-service:
     build:
       context: ..
       dockerfile: apps/identity-service/Dockerfile
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
       DATABASE_URL: postgres://myoadapt:myoadapt@postgres:5432/myoadapt
       AUTH_MODE: local
       AUTH_LOCAL_DEV_SECRET: dev-only-insecure-secret-change-me
@@ -41,14 +41,14 @@ services:
       postgres:
         condition: service_healthy
     ports:
-      - "4001:4001"
+      - "127.0.0.1:4001:4001"
 
   user-profile-service:
     build:
       context: ..
       dockerfile: apps/user-profile-service/Dockerfile
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
       DATABASE_URL: postgres://myoadapt:myoadapt@postgres:5432/myoadapt
       AUTH_MODE: local
       AUTH_LOCAL_DEV_SECRET: dev-only-insecure-secret-change-me
@@ -58,14 +58,14 @@ services:
       postgres:
         condition: service_healthy
     ports:
-      - "4002:4002"
+      - "127.0.0.1:4002:4002"
 
   engine-service:
     build:
       context: ..
       dockerfile: apps/engine-service/Dockerfile
     environment:
-      NODE_ENV: production
+      NODE_ENV: development
       DATABASE_URL: postgres://myoadapt:myoadapt@postgres:5432/myoadapt
       AUTH_MODE: local
       AUTH_LOCAL_DEV_SECRET: dev-only-insecure-secret-change-me
@@ -75,7 +75,7 @@ services:
       postgres:
         condition: service_healthy
     ports:
-      - "4003:4003"
+      - "127.0.0.1:4003:4003"
 
   client:
     build:
@@ -87,7 +87,7 @@ services:
     depends_on:
       - gateway
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
 
   gateway:
     image: kong:3.7
@@ -105,8 +105,8 @@ services:
       - user-profile-service
       - engine-service
     ports:
-      - "8000:8000" # proxy (public API entrypoint)
-      - "8001:8001" # admin
+      - "127.0.0.1:8000:8000" # local API entrypoint
+      - "127.0.0.1:8001:8001" # local admin API
 
 volumes:
   pgdata:

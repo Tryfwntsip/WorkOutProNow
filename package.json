@@ -2,10 +2,11 @@
   "name": "workoutpronow",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "WorkOutProNow adaptive training platform — deterministic coaching, adaptivity and offline clients",
   "packageManager": "pnpm@9.7.0",
   "engines": {
-    "node": ">=20.11.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "build": "turbo run build",

@@ -1,5 +1,8 @@
 # WorkOutProNow — Adaptive Training Platform
 
+[![CI](https://github.com/Tryfwntsip/WorkOutProNow/actions/workflows/ci.yml/badge.svg)](https://github.com/Tryfwntsip/WorkOutProNow/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Monorepo for the WorkOutProNow adaptive hypertrophy coaching platform.
 
 > **Completed epics: E0 — Foundations & Schema, E1 — Exercise & Science DB,
@@ -14,7 +17,7 @@ Monorepo for the WorkOutProNow adaptive hypertrophy coaching platform.
 
 | Concern            | Choice                                           |
 | ------------------ | ------------------------------------------------ |
-| Language / runtime | TypeScript · Node 20                             |
+| Language / runtime | TypeScript · Node 24                             |
 | Monorepo           | pnpm workspaces + Turborepo                      |
 | HTTP services      | Fastify                                          |
 | Database           | PostgreSQL 16 + TimescaleDB                      |
@@ -62,6 +65,10 @@ pnpm db:migrate
 Public API entrypoint is the gateway at `http://localhost:8000`.
 Mobile/web PWA at `http://localhost:3000`.
 Jaeger UI at `http://localhost:16686`.
+
+The Docker Compose stack is for local development only. Its database, service,
+gateway, and observability ports bind to `127.0.0.1` and are not production
+deployment defaults.
 
 Without Docker/Kong, `pnpm local:setup` applies migrations/seeds and
 `pnpm local:services` starts all Node services and the PWA. The PWA proxies
@@ -339,3 +346,18 @@ ranked by stimulus match and lets the user choose the replacement.
 | E4.5 | Explainability “Why?” rationale views                            | ✅  |
 | E4.6 | Safe exercise swap overlays, skip and deload tools               | ✅  |
 | E4.7 | Performance analytics view using Δe1RM history                   | ✅  |
+
+## Safety disclaimer
+
+WorkOutProNow provides informational training suggestions, not medical advice.
+Stop exercising and seek qualified medical guidance for pain, injury, unusual
+symptoms, or concerns about whether a program is appropriate for you.
+
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. Report
+suspected vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
+
+## License
+
+Released under the [MIT License](LICENSE).

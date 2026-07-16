@@ -1,4 +1,4 @@
-FROM node:20-slim AS build
+FROM node:24-slim AS build
 WORKDIR /app
 RUN corepack enable
 
@@ -15,7 +15,7 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm --filter @myoadapt/engine-service... build
 
-FROM node:20-slim AS runtime
+FROM node:24-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 RUN corepack enable

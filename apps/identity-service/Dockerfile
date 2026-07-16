@@ -1,5 +1,5 @@
 # ── Build stage ──────────────────────────────────────────────
-FROM node:20-slim AS build
+FROM node:24-slim AS build
 WORKDIR /app
 
 RUN corepack enable
@@ -18,7 +18,7 @@ COPY . .
 RUN pnpm --filter @myoadapt/identity-service... build
 
 # ── Runtime stage ────────────────────────────────────────────
-FROM node:20-slim AS runtime
+FROM node:24-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 RUN corepack enable
