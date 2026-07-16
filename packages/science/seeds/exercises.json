@@ -1,0 +1,2624 @@
+[
+  {
+    "slug": "barbell_bench_press",
+    "name": "Barbell Bench Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.9,
+      "stability": 0.8,
+      "stretchEmphasis": 0.5,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 5,
+      "max": 10
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.6
+      },
+      {
+        "id": "elbow",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "horizontal_press"
+  },
+  {
+    "slug": "incline_barbell_press",
+    "name": "Incline Barbell Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.85,
+      "stability": 0.75,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 5,
+      "max": 10
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.6
+      },
+      {
+        "id": "elbow",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "incline_press"
+  },
+  {
+    "slug": "flat_dumbbell_press",
+    "name": "Flat Dumbbell Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.6,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.5
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.5
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "horizontal_press"
+  },
+  {
+    "slug": "incline_dumbbell_press",
+    "name": "Incline Dumbbell Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.6,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.5
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.5
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "incline_press"
+  },
+  {
+    "slug": "machine_chest_press",
+    "name": "Machine Chest Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.75,
+      "stability": 0.9,
+      "stretchEmphasis": 0.55,
+      "fatigueCost": 0.45
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.4
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "horizontal_press"
+  },
+  {
+    "slug": "cable_fly",
+    "name": "Cable Chest Fly",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.5,
+      "stability": 0.7,
+      "stretchEmphasis": 0.8,
+      "fatigueCost": 0.35
+    },
+    "repRange": {
+      "min": 10,
+      "max": 18
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "fly"
+  },
+  {
+    "slug": "pushup",
+    "name": "Push-up",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.4,
+      "stability": 0.6,
+      "stretchEmphasis": 0.5,
+      "fatigueCost": 0.4
+    },
+    "repRange": {
+      "min": 8,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "horizontal_press"
+  },
+  {
+    "slug": "chest_dip",
+    "name": "Chest Dip",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.5,
+      "stretchEmphasis": 0.8,
+      "fatigueCost": 0.55
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dip_bars"
+      },
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.6
+      },
+      {
+        "id": "elbow",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "dip"
+  },
+  {
+    "slug": "overhead_press",
+    "name": "Overhead Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.5,
+      "stretchEmphasis": 0.4,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 5,
+      "max": 10
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "front_delts",
+        "role": "primary"
+      },
+      {
+        "id": "side_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.6
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "vertical_press"
+  },
+  {
+    "slug": "dumbbell_shoulder_press",
+    "name": "Dumbbell Shoulder Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.5,
+      "stretchEmphasis": 0.45,
+      "fatigueCost": 0.55
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "front_delts",
+        "role": "primary"
+      },
+      {
+        "id": "side_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.5
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "vertical_press"
+  },
+  {
+    "slug": "machine_shoulder_press",
+    "name": "Machine Shoulder Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.9,
+      "stretchEmphasis": 0.4,
+      "fatigueCost": 0.45
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "front_delts",
+        "role": "primary"
+      },
+      {
+        "id": "side_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "vertical_press"
+  },
+  {
+    "slug": "dumbbell_lateral_raise",
+    "name": "Dumbbell Lateral Raise",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.4,
+      "stability": 0.6,
+      "stretchEmphasis": 0.3,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "side_delts",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "shoulder_abduction"
+  },
+  {
+    "slug": "cable_lateral_raise",
+    "name": "Cable Lateral Raise",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.45,
+      "stability": 0.7,
+      "stretchEmphasis": 0.35,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "side_delts",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "shoulder_abduction"
+  },
+  {
+    "slug": "machine_lateral_raise",
+    "name": "Machine Lateral Raise",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.5,
+      "stability": 0.9,
+      "stretchEmphasis": 0.3,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "side_delts",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.25
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "shoulder_abduction"
+  },
+  {
+    "slug": "reverse_pec_deck",
+    "name": "Reverse Pec Deck",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.5,
+      "stability": 0.9,
+      "stretchEmphasis": 0.4,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "rear_delts",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.25
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "reverse_fly"
+  },
+  {
+    "slug": "cable_rear_delt_fly",
+    "name": "Cable Rear Delt Fly",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.4,
+      "stability": 0.7,
+      "stretchEmphasis": 0.45,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "rear_delts",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.25
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "reverse_fly"
+  },
+  {
+    "slug": "dumbbell_rear_delt_fly",
+    "name": "Dumbbell Rear Delt Fly",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.35,
+      "stability": 0.55,
+      "stretchEmphasis": 0.45,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "rear_delts",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.25
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "reverse_fly"
+  },
+  {
+    "slug": "cable_triceps_pushdown",
+    "name": "Cable Triceps Pushdown",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.8,
+      "stretchEmphasis": 0.5,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "triceps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "elbow_extension"
+  },
+  {
+    "slug": "overhead_cable_extension",
+    "name": "Overhead Cable Triceps Extension",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.55,
+      "stability": 0.7,
+      "stretchEmphasis": 0.8,
+      "fatigueCost": 0.25
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "triceps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "overhead_extension"
+  },
+  {
+    "slug": "ez_bar_skullcrusher",
+    "name": "EZ-Bar Skull Crusher",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.6,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 8,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "triceps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "ez_bar"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "elbow_extension"
+  },
+  {
+    "slug": "triceps_dip",
+    "name": "Triceps Dip",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.55,
+      "stability": 0.5,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.5
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "triceps",
+        "role": "primary"
+      },
+      {
+        "id": "chest",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dip_bars"
+      },
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.4
+      },
+      {
+        "id": "elbow",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "dip"
+  },
+  {
+    "slug": "pull_up",
+    "name": "Pull-up",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.5,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 5,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "lats",
+        "role": "primary"
+      },
+      {
+        "id": "biceps",
+        "role": "secondary"
+      },
+      {
+        "id": "upper_back",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "pullup_bar"
+      },
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.5
+      },
+      {
+        "id": "elbow",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "vertical_pull"
+  },
+  {
+    "slug": "lat_pulldown",
+    "name": "Lat Pulldown",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.85,
+      "stretchEmphasis": 0.65,
+      "fatigueCost": 0.45
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "lats",
+        "role": "primary"
+      },
+      {
+        "id": "biceps",
+        "role": "secondary"
+      },
+      {
+        "id": "upper_back",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.4
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "vertical_pull"
+  },
+  {
+    "slug": "straight_arm_pulldown",
+    "name": "Straight-Arm Pulldown",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.45,
+      "stability": 0.7,
+      "stretchEmphasis": 0.75,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 12,
+      "max": 18
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "lats",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "pullover"
+  },
+  {
+    "slug": "barbell_row",
+    "name": "Barbell Row",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.8,
+      "stability": 0.6,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "upper_back",
+        "role": "primary"
+      },
+      {
+        "id": "lats",
+        "role": "secondary"
+      },
+      {
+        "id": "biceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.4
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      },
+      {
+        "id": "lower_back",
+        "stress": 0.5
+      }
+    ],
+    "contraindicatedInjuries": [
+      "lower_back"
+    ],
+    "status": "approved",
+    "movementPattern": "horizontal_pull"
+  },
+  {
+    "slug": "seated_cable_row",
+    "name": "Seated Cable Row",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.85,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.45
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "upper_back",
+        "role": "primary"
+      },
+      {
+        "id": "lats",
+        "role": "secondary"
+      },
+      {
+        "id": "biceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "horizontal_pull"
+  },
+  {
+    "slug": "chest_supported_row",
+    "name": "Chest-Supported Row",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.9,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.4
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "upper_back",
+        "role": "primary"
+      },
+      {
+        "id": "lats",
+        "role": "secondary"
+      },
+      {
+        "id": "rear_delts",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "horizontal_pull"
+  },
+  {
+    "slug": "dumbbell_row",
+    "name": "One-Arm Dumbbell Row",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.6,
+      "stretchEmphasis": 0.65,
+      "fatigueCost": 0.45
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 75,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "upper_back",
+        "role": "primary"
+      },
+      {
+        "id": "lats",
+        "role": "secondary"
+      },
+      {
+        "id": "biceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "horizontal_pull"
+  },
+  {
+    "slug": "barbell_shrug",
+    "name": "Barbell Shrug",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.85,
+      "stability": 0.7,
+      "stretchEmphasis": 0.4,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "traps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "shrug"
+  },
+  {
+    "slug": "dumbbell_shrug",
+    "name": "Dumbbell Shrug",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.75,
+      "stability": 0.7,
+      "stretchEmphasis": 0.45,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 120
+    },
+    "muscles": [
+      {
+        "id": "traps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "shrug"
+  },
+  {
+    "slug": "ez_bar_curl",
+    "name": "EZ-Bar Biceps Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.6,
+      "stretchEmphasis": 0.5,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "biceps",
+        "role": "primary"
+      },
+      {
+        "id": "forearms",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "ez_bar"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "curl"
+  },
+  {
+    "slug": "dumbbell_curl",
+    "name": "Dumbbell Biceps Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.55,
+      "stability": 0.6,
+      "stretchEmphasis": 0.55,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "biceps",
+        "role": "primary"
+      },
+      {
+        "id": "forearms",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "curl"
+  },
+  {
+    "slug": "incline_dumbbell_curl",
+    "name": "Incline Dumbbell Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.5,
+      "stability": 0.6,
+      "stretchEmphasis": 0.8,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "biceps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "incline_curl"
+  },
+  {
+    "slug": "cable_curl",
+    "name": "Cable Biceps Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.55,
+      "stability": 0.8,
+      "stretchEmphasis": 0.55,
+      "fatigueCost": 0.25
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "biceps",
+        "role": "primary"
+      },
+      {
+        "id": "forearms",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "curl"
+  },
+  {
+    "slug": "preacher_curl",
+    "name": "Preacher Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.55,
+      "stability": 0.8,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "biceps",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "ez_bar"
+      },
+      {
+        "id": "preacher_bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "elbow",
+        "stress": 0.35
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "preacher_curl"
+  },
+  {
+    "slug": "dumbbell_wrist_curl",
+    "name": "Dumbbell Wrist Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.5,
+      "stability": 0.8,
+      "stretchEmphasis": 0.4,
+      "fatigueCost": 0.15
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 75
+    },
+    "muscles": [
+      {
+        "id": "forearms",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "wrist",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "wrist_curl"
+  },
+  {
+    "slug": "barbell_back_squat",
+    "name": "Barbell Back Squat",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.95,
+      "stability": 0.6,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.9
+    },
+    "repRange": {
+      "min": 5,
+      "max": 10
+    },
+    "restBand": {
+      "minSeconds": 150,
+      "maxSeconds": 240
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      },
+      {
+        "id": "lower_back",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.6
+      },
+      {
+        "id": "knee",
+        "stress": 0.6
+      },
+      {
+        "id": "ankle",
+        "stress": 0.3
+      },
+      {
+        "id": "spine",
+        "stress": 0.5
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee",
+      "lower_back"
+    ],
+    "status": "approved",
+    "movementPattern": "squat"
+  },
+  {
+    "slug": "front_squat",
+    "name": "Front Squat",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.85,
+      "stability": 0.55,
+      "stretchEmphasis": 0.75,
+      "fatigueCost": 0.85
+    },
+    "repRange": {
+      "min": 5,
+      "max": 10
+    },
+    "restBand": {
+      "minSeconds": 150,
+      "maxSeconds": 240
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.5
+      },
+      {
+        "id": "knee",
+        "stress": 0.6
+      },
+      {
+        "id": "spine",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "squat"
+  },
+  {
+    "slug": "leg_press",
+    "name": "Leg Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.9,
+      "stability": 0.9,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "leg_press"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.4
+      },
+      {
+        "id": "knee",
+        "stress": 0.5
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "leg_press"
+  },
+  {
+    "slug": "hack_squat",
+    "name": "Hack Squat",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.85,
+      "stability": 0.85,
+      "stretchEmphasis": 0.75,
+      "fatigueCost": 0.7
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "hack_squat"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "knee",
+        "stress": 0.5
+      },
+      {
+        "id": "hip",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "squat"
+  },
+  {
+    "slug": "leg_extension",
+    "name": "Leg Extension",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.95,
+      "stretchEmphasis": 0.65,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 10,
+      "max": 18
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "knee",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "knee_extension"
+  },
+  {
+    "slug": "goblet_squat",
+    "name": "Goblet Squat",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.7,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.4
+      },
+      {
+        "id": "knee",
+        "stress": 0.5
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "squat"
+  },
+  {
+    "slug": "romanian_deadlift",
+    "name": "Romanian Deadlift",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.9,
+      "stability": 0.6,
+      "stretchEmphasis": 0.9,
+      "fatigueCost": 0.8
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "hamstrings",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      },
+      {
+        "id": "lower_back",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.6
+      },
+      {
+        "id": "knee",
+        "stress": 0.3
+      },
+      {
+        "id": "lower_back",
+        "stress": 0.6
+      }
+    ],
+    "contraindicatedInjuries": [
+      "lower_back"
+    ],
+    "status": "approved",
+    "movementPattern": "hip_hinge"
+  },
+  {
+    "slug": "dumbbell_rdl",
+    "name": "Dumbbell Romanian Deadlift",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.6,
+      "stretchEmphasis": 0.9,
+      "fatigueCost": 0.7
+    },
+    "repRange": {
+      "min": 8,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "hamstrings",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      },
+      {
+        "id": "lower_back",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.5
+      },
+      {
+        "id": "lower_back",
+        "stress": 0.5
+      }
+    ],
+    "contraindicatedInjuries": [
+      "lower_back"
+    ],
+    "status": "approved",
+    "movementPattern": "hip_hinge"
+  },
+  {
+    "slug": "lying_leg_curl",
+    "name": "Lying Leg Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.9,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "hamstrings",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "knee",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "knee_flexion"
+  },
+  {
+    "slug": "seated_leg_curl",
+    "name": "Seated Leg Curl",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.95,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 10,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "hamstrings",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "knee",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "knee_flexion"
+  },
+  {
+    "slug": "hip_thrust",
+    "name": "Barbell Hip Thrust",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.9,
+      "stability": 0.7,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.6
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "glutes",
+        "role": "primary"
+      },
+      {
+        "id": "hamstrings",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "barbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.4
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "hip_thrust"
+  },
+  {
+    "slug": "bulgarian_split_squat",
+    "name": "Bulgarian Split Squat",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.45,
+      "stretchEmphasis": 0.8,
+      "fatigueCost": 0.7
+    },
+    "repRange": {
+      "min": 8,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "glutes",
+        "role": "primary"
+      },
+      {
+        "id": "quads",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "dumbbell"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.5
+      },
+      {
+        "id": "knee",
+        "stress": 0.5
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "lunge"
+  },
+  {
+    "slug": "standing_calf_raise",
+    "name": "Standing Calf Raise",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.8,
+      "stability": 0.85,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.25
+    },
+    "repRange": {
+      "min": 10,
+      "max": 18
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "calves",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "ankle",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "calf_raise_straight"
+  },
+  {
+    "slug": "seated_calf_raise",
+    "name": "Seated Calf Raise",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.7,
+      "stability": 0.9,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.2
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "calves",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "ankle",
+        "stress": 0.25
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "calf_raise_bent"
+  },
+  {
+    "slug": "hanging_leg_raise",
+    "name": "Hanging Leg Raise",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.4,
+      "stability": 0.5,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.3
+    },
+    "repRange": {
+      "min": 8,
+      "max": 15
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "abs",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "pullup_bar"
+      },
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.2
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "hip_flexion"
+  },
+  {
+    "slug": "cable_crunch",
+    "name": "Cable Crunch",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.6,
+      "stability": 0.85,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.25
+    },
+    "repRange": {
+      "min": 10,
+      "max": 18
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "abs",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "cable"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "spine",
+        "stress": 0.2
+      }
+    ],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "spinal_flexion"
+  },
+  {
+    "slug": "plank",
+    "name": "Plank",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.3,
+      "stability": 0.7,
+      "stretchEmphasis": 0.3,
+      "fatigueCost": 0.25
+    },
+    "repRange": {
+      "min": 12,
+      "max": 20
+    },
+    "restBand": {
+      "minSeconds": 45,
+      "maxSeconds": 60
+    },
+    "muscles": [
+      {
+        "id": "abs",
+        "role": "primary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [],
+    "contraindicatedInjuries": [],
+    "status": "approved",
+    "movementPattern": "isometric_brace"
+  },
+  {
+    "slug": "back_extension",
+    "name": "Back Extension",
+    "mechanic": "isolation",
+    "stimulus": {
+      "loadability": 0.55,
+      "stability": 0.8,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.35
+    },
+    "repRange": {
+      "min": 10,
+      "max": 18
+    },
+    "restBand": {
+      "minSeconds": 60,
+      "maxSeconds": 90
+    },
+    "muscles": [
+      {
+        "id": "lower_back",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      },
+      {
+        "id": "hamstrings",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "machine"
+      },
+      {
+        "id": "bodyweight"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "lower_back",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "lower_back"
+    ],
+    "status": "approved",
+    "movementPattern": "hip_extension"
+  },
+  {
+    "slug": "smith_incline_press",
+    "name": "Smith Machine Incline Press",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.85,
+      "stability": 0.85,
+      "stretchEmphasis": 0.6,
+      "fatigueCost": 0.55
+    },
+    "repRange": {
+      "min": 6,
+      "max": 10
+    },
+    "restBand": {
+      "minSeconds": 90,
+      "maxSeconds": 150
+    },
+    "muscles": [
+      {
+        "id": "chest",
+        "role": "primary"
+      },
+      {
+        "id": "front_delts",
+        "role": "secondary"
+      },
+      {
+        "id": "triceps",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "smith_machine"
+      },
+      {
+        "id": "bench"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "shoulder",
+        "stress": 0.5
+      },
+      {
+        "id": "elbow",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "shoulder"
+    ],
+    "status": "approved",
+    "movementPattern": "incline_press"
+  },
+  {
+    "slug": "smith_squat",
+    "name": "Smith Machine Squat",
+    "mechanic": "compound",
+    "stimulus": {
+      "loadability": 0.9,
+      "stability": 0.85,
+      "stretchEmphasis": 0.7,
+      "fatigueCost": 0.8
+    },
+    "repRange": {
+      "min": 6,
+      "max": 12
+    },
+    "restBand": {
+      "minSeconds": 120,
+      "maxSeconds": 180
+    },
+    "muscles": [
+      {
+        "id": "quads",
+        "role": "primary"
+      },
+      {
+        "id": "glutes",
+        "role": "secondary"
+      }
+    ],
+    "equipment": [
+      {
+        "id": "smith_machine"
+      }
+    ],
+    "jointStress": [
+      {
+        "id": "hip",
+        "stress": 0.5
+      },
+      {
+        "id": "knee",
+        "stress": 0.55
+      },
+      {
+        "id": "ankle",
+        "stress": 0.3
+      }
+    ],
+    "contraindicatedInjuries": [
+      "knee"
+    ],
+    "status": "approved",
+    "movementPattern": "squat"
+  }
+]

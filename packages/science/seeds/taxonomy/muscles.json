@@ -1,0 +1,18 @@
+[
+  { "id": "chest", "name": "Chest", "muscleGroup": "push" },
+  { "id": "front_delts", "name": "Front Deltoids", "muscleGroup": "push" },
+  { "id": "side_delts", "name": "Side Deltoids", "muscleGroup": "push" },
+  { "id": "rear_delts", "name": "Rear Deltoids", "muscleGroup": "pull" },
+  { "id": "triceps", "name": "Triceps", "muscleGroup": "push" },
+  { "id": "lats", "name": "Latissimus Dorsi", "muscleGroup": "pull" },
+  { "id": "upper_back", "name": "Upper Back", "muscleGroup": "pull" },
+  { "id": "traps", "name": "Trapezius", "muscleGroup": "pull" },
+  { "id": "biceps", "name": "Biceps", "muscleGroup": "pull" },
+  { "id": "forearms", "name": "Forearms", "muscleGroup": "pull" },
+  { "id": "quads", "name": "Quadriceps", "muscleGroup": "legs" },
+  { "id": "hamstrings", "name": "Hamstrings", "muscleGroup": "legs" },
+  { "id": "glutes", "name": "Gluteus", "muscleGroup": "legs" },
+  { "id": "calves", "name": "Calves", "muscleGroup": "legs" },
+  { "id": "abs", "name": "Abdominals", "muscleGroup": "core" },
+  { "id": "lower_back", "name": "Lower Back / Erectors", "muscleGroup": "core" }
+]

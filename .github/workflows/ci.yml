@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-test:
+    name: Lint · Typecheck · Test · Build
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: timescale/timescaledb:2.16.1-pg16
+        env:
+          POSTGRES_USER: myoadapt
+          POSTGRES_PASSWORD: myoadapt
+          POSTGRES_DB: myoadapt_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U myoadapt"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgres://myoadapt:myoadapt@localhost:5432/myoadapt_test
+      AUTH_MODE: local
+      AUTH_LOCAL_DEV_SECRET: ci-only-secret
+      NODE_ENV: test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.7.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run database migrations
+        run: pnpm db:migrate
+
+      - name: Validate science seeds (E1.4)
+        run: pnpm --filter @myoadapt/science validate
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
+
+      - name: Seed exercise & science data (live DB)
+        run: pnpm --filter @myoadapt/science seed
+
+  docker-images:
+    name: Build service images
+    runs-on: ubuntu-latest
+    needs: build-test
+    if: github.ref == 'refs/heads/main'
+    strategy:
+      matrix:
+        service: [identity-service, user-profile-service, engine-service, client]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ${{ matrix.service }} image
+        run: docker build -f apps/${{ matrix.service }}/Dockerfile -t myoadapt/${{ matrix.service }}:${{ github.sha }} .

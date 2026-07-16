@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "notes": "Initial evidence-based defaults (MyoAdapt §3.3). Hypertrophy focus.",
+  "weeklyVolume": {
+    "default": { "min": 8, "max": 12 },
+    "perMuscle": {
+      "side_delts": { "min": 10, "max": 16 },
+      "calves": { "min": 10, "max": 16 },
+      "abs": { "min": 8, "max": 16 }
+    }
+  },
+  "setsPerSessionCap": 10,
+  "repRanges": [
+    { "min": 5, "max": 10 },
+    { "min": 10, "max": 15 }
+  ],
+  "rir": { "min": 0, "max": 3 },
+  "restSecondsByMechanic": {
+    "compound": { "min": 120, "max": 180 },
+    "isolation": { "min": 60, "max": 120 }
+  },
+  "adaptivity": {
+    "e1rmRepsDivisor": 30,
+    "fatigueDropPerSet": 0.75,
+    "fatigueHalfLifeHours": 48,
+    "fatiguePerSetScale": 0.12,
+    "secondaryMuscleCredit": 0.5,
+    "loadIncrementPct": 0.025,
+    "minimumLoadIncrement": 2.5,
+    "deloadDeclinePct": 0.05,
+    "deloadFatigueThreshold": 0.65,
+    "deloadMinDecliningExercises": 2,
+    "recoveryVolumeMultiplier": 0.5,
+    "recoveryLoadMultiplier": 0.9,
+    "recoveryMinRir": 3
+  }
+}

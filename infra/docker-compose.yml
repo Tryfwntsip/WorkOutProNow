@@ -1,0 +1,112 @@
+name: myoadapt-e0
+
+services:
+  postgres:
+    image: timescale/timescaledb:2.16.1-pg16
+    environment:
+      POSTGRES_USER: myoadapt
+      POSTGRES_PASSWORD: myoadapt
+      POSTGRES_DB: myoadapt
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U myoadapt"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # OTLP traces sink (Jaeger all-in-one) — E0.5 baseline.
+  jaeger:
+    image: jaegertracing/all-in-one:1.60
+    environment:
+      COLLECTOR_OTLP_ENABLED: "true"
+    ports:
+      - "16686:16686" # UI
+      - "4318:4318" # OTLP HTTP
+
+  identity-service:
+    build:
+      context: ..
+      dockerfile: apps/identity-service/Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://myoadapt:myoadapt@postgres:5432/myoadapt
+      AUTH_MODE: local
+      AUTH_LOCAL_DEV_SECRET: dev-only-insecure-secret-change-me
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+      IDENTITY_SERVICE_PORT: 4001
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "4001:4001"
+
+  user-profile-service:
+    build:
+      context: ..
+      dockerfile: apps/user-profile-service/Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://myoadapt:myoadapt@postgres:5432/myoadapt
+      AUTH_MODE: local
+      AUTH_LOCAL_DEV_SECRET: dev-only-insecure-secret-change-me
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+      USER_PROFILE_SERVICE_PORT: 4002
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "4002:4002"
+
+  engine-service:
+    build:
+      context: ..
+      dockerfile: apps/engine-service/Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://myoadapt:myoadapt@postgres:5432/myoadapt
+      AUTH_MODE: local
+      AUTH_LOCAL_DEV_SECRET: dev-only-insecure-secret-change-me
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+      ENGINE_SERVICE_PORT: 4003
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "4003:4003"
+
+  client:
+    build:
+      context: ..
+      dockerfile: apps/client/Dockerfile
+    environment:
+      NODE_ENV: production
+      CLIENT_PORT: 3000
+    depends_on:
+      - gateway
+    ports:
+      - "3000:3000"
+
+  gateway:
+    image: kong:3.7
+    environment:
+      KONG_DATABASE: "off"
+      KONG_DECLARATIVE_CONFIG: /kong/kong.yml
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+    volumes:
+      - ./gateway/kong.yml:/kong/kong.yml:ro
+    depends_on:
+      - identity-service
+      - user-profile-service
+      - engine-service
+    ports:
+      - "8000:8000" # proxy (public API entrypoint)
+      - "8001:8001" # admin
+
+volumes:
+  pgdata:

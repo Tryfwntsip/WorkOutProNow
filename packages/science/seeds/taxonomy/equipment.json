@@ -1,0 +1,16 @@
+[
+  { "id": "barbell", "name": "Barbell", "category": "free_weight" },
+  { "id": "dumbbell", "name": "Dumbbell", "category": "free_weight" },
+  { "id": "ez_bar", "name": "EZ Curl Bar", "category": "free_weight" },
+  { "id": "kettlebell", "name": "Kettlebell", "category": "free_weight" },
+  { "id": "machine", "name": "Machine", "category": "machine" },
+  { "id": "leg_press", "name": "Leg Press Machine", "category": "machine" },
+  { "id": "hack_squat", "name": "Hack Squat Machine", "category": "machine" },
+  { "id": "smith_machine", "name": "Smith Machine", "category": "machine" },
+  { "id": "cable", "name": "Cable", "category": "cable" },
+  { "id": "bench", "name": "Flat/Adjustable Bench", "category": "accessory" },
+  { "id": "preacher_bench", "name": "Preacher Bench", "category": "accessory" },
+  { "id": "pullup_bar", "name": "Pull-up Bar", "category": "accessory" },
+  { "id": "dip_bars", "name": "Dip / Parallel Bars", "category": "accessory" },
+  { "id": "bodyweight", "name": "Bodyweight", "category": "bodyweight" }
+]

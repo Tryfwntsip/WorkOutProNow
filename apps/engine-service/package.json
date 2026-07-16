@@ -1,0 +1,24 @@
+{
+  "name": "@myoadapt/engine-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch --import ./src/tracing.ts src/index.ts",
+    "start": "node --import ./dist/tracing.js dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@myoadapt/config": "workspace:*",
+    "@myoadapt/db": "workspace:*",
+    "@myoadapt/engine": "workspace:*",
+    "@myoadapt/http-kit": "workspace:*",
+    "@myoadapt/observability": "workspace:*",
+    "@myoadapt/science": "workspace:*",
+    "fastify": "^4.28.1"
+  }
+}

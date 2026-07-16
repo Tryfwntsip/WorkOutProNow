@@ -1,0 +1,9 @@
+{
+  "name": "WorkOutProNow",
+  "short_name": "WorkOutProNow",
+  "description": "Adaptive, explainable training coach",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07110f",
+  "theme_color": "#9bf24a"
+}

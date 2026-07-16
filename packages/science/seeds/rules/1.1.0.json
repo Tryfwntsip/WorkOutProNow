@@ -1,0 +1,44 @@
+{
+  "version": "1.1.0",
+  "notes": "Hypertrophy rules: training-age volume, 0-2 RIR hard sets, 5-15 practical reps, adequate rest and progressive overload.",
+  "weeklyVolume": {
+    "default": { "min": 8, "max": 15 },
+    "perMuscle": {},
+    "byTrainingAge": {
+      "beginner": { "min": 4, "max": 10 },
+      "intermediate": { "min": 8, "max": 15 },
+      "advanced": { "min": 11, "max": 18 }
+    },
+    "specializationMaxByTrainingAge": {
+      "beginner": 10,
+      "intermediate": 20,
+      "advanced": 30
+    }
+  },
+  "setsPerSessionCap": 10,
+  "repRanges": [
+    { "min": 5, "max": 10 },
+    { "min": 10, "max": 15 }
+  ],
+  "rir": { "min": 0, "max": 2 },
+  "restSecondsByMechanic": {
+    "compound": { "min": 150, "max": 180 },
+    "isolation": { "min": 90, "max": 120 }
+  },
+  "adaptivity": {
+    "e1rmRepsDivisor": 30,
+    "fatigueDropPerSet": 0.75,
+    "fatigueHalfLifeHours": 48,
+    "fatiguePerSetScale": 0.12,
+    "secondaryMuscleCredit": 0.5,
+    "hardSetMaxRir": 2,
+    "loadIncrementPct": 0.025,
+    "minimumLoadIncrement": 2.5,
+    "deloadDeclinePct": 0.05,
+    "deloadFatigueThreshold": 0.65,
+    "deloadMinDecliningExercises": 2,
+    "recoveryVolumeMultiplier": 0.5,
+    "recoveryLoadMultiplier": 0.9,
+    "recoveryMinRir": 3
+  }
+}

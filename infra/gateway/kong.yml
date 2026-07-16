@@ -1,0 +1,96 @@
+_format_version: "3.0"
+_transform: true
+
+# ─────────────────────────────────────────────────────────────
+# E0.4 — API Gateway (Kong, DB-less declarative).
+# Routing + rate limiting + correlation ids at the edge. Services additionally
+# verify JWTs themselves (defence in depth). In staging/prod the edge JWT check
+# is done with the Kong jwt/openid-connect plugin against Auth0 (see comment
+# block at the bottom) — omitted from the local config so dev runs offline.
+# ─────────────────────────────────────────────────────────────
+
+services:
+  - name: identity-service
+    url: http://identity-service:4001
+    routes:
+      - name: identity-auth
+        paths:
+          - /auth
+        strip_path: false
+      # Health/metrics are NOT exposed through the gateway.
+
+  - name: user-profile-service
+    url: http://user-profile-service:4002
+    routes:
+      - name: profile
+        paths:
+          - /profile
+        strip_path: false
+
+  - name: engine-service
+    url: http://engine-service:4003
+    routes:
+      - name: engine-session
+        paths:
+          - /session
+        strip_path: false
+      - name: engine-tools
+        paths:
+          - /tools
+        strip_path: false
+      - name: engine-exercise
+        paths:
+          - /exercise
+        strip_path: false
+      - name: engine-analytics
+        paths:
+          - /analytics
+        strip_path: false
+      - name: engine-program
+        paths:
+          - /program
+        strip_path: false
+
+plugins:
+  # Global rate limiting — local-policy counters (swap to redis in prod).
+  - name: rate-limiting
+    config:
+      minute: 120
+      policy: local
+      fault_tolerant: true
+
+  - name: correlation-id
+    config:
+      header_name: X-Request-Id
+      generator: uuid
+      echo_downstream: true
+
+  - name: request-size-limiting
+    config:
+      allowed_payload_size: 1 # MB
+
+  - name: cors
+    config:
+      origins:
+        - "*"
+      methods:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - OPTIONS
+      headers:
+        - Authorization
+        - Content-Type
+        - X-Request-Id
+      credentials: false
+      max_age: 3600
+
+# ── Production JWT enforcement (reference — enable per-environment) ──
+# plugins:
+#   - name: openid-connect
+#     config:
+#       issuer: https://<AUTH0_DOMAIN>/
+#       audience: [myoadapt-api]
+#       verify_signature: true
+#       scopes_required: []

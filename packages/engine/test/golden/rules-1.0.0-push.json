@@ -1,0 +1,374 @@
+{
+  "planId": "plan_042a7ae4e181794918503b57",
+  "contractVersion": "1.0.0",
+  "ruleSetVersion": "1.0.0",
+  "athleteStateRevision": 3,
+  "plannedFor": "2026-06-08",
+  "context": {
+    "date": "2026-06-08",
+    "minutesAvailable": 45,
+    "environmentId": "full-gym",
+    "equipment": [
+      "barbell",
+      "bench",
+      "bodyweight",
+      "cable",
+      "dumbbell",
+      "ez_bar",
+      "machine",
+      "pullup_bar"
+    ]
+  },
+  "routine": "push",
+  "estimatedDurationMinutes": 13,
+  "muscleTargets": [
+    {
+      "muscleId": "side_delts",
+      "targetSets": 3,
+      "priorityWeight": 1.3,
+      "fatigueScore": 0,
+      "rationale": [
+        {
+          "stage": "muscle_allocation",
+          "code": "muscle.remaining_volume",
+          "message": "Allocated 3 sets to side_delts",
+          "facts": {
+            "weeklyTarget": 13,
+            "completedSets": 1,
+            "priorityWeight": 1.3,
+            "fatigueScore": 0
+          }
+        }
+      ]
+    },
+    {
+      "muscleId": "chest",
+      "targetSets": 2,
+      "priorityWeight": 1.4,
+      "fatigueScore": 0.1,
+      "rationale": [
+        {
+          "stage": "muscle_allocation",
+          "code": "muscle.remaining_volume",
+          "message": "Allocated 2 sets to chest",
+          "facts": {
+            "weeklyTarget": 10,
+            "completedSets": 2,
+            "priorityWeight": 1.4,
+            "fatigueScore": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "muscleId": "front_delts",
+      "targetSets": 2,
+      "priorityWeight": 1,
+      "fatigueScore": 0,
+      "rationale": [
+        {
+          "stage": "muscle_allocation",
+          "code": "muscle.remaining_volume",
+          "message": "Allocated 2 sets to front_delts",
+          "facts": {
+            "weeklyTarget": 10,
+            "completedSets": 2,
+            "priorityWeight": 1,
+            "fatigueScore": 0
+          }
+        }
+      ]
+    },
+    {
+      "muscleId": "triceps",
+      "targetSets": 1,
+      "priorityWeight": 1,
+      "fatigueScore": 0.2,
+      "rationale": [
+        {
+          "stage": "muscle_allocation",
+          "code": "muscle.remaining_volume",
+          "message": "Allocated 1 sets to triceps",
+          "facts": {
+            "weeklyTarget": 10,
+            "completedSets": 3,
+            "priorityWeight": 1,
+            "fatigueScore": 0.2
+          }
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "exerciseSlug": "barbell_bench_press",
+      "exerciseName": "Barbell Bench Press",
+      "primaryMuscle": "chest",
+      "mechanic": "compound",
+      "order": 1,
+      "restSeconds": 150,
+      "sets": [
+        {
+          "index": 1,
+          "targetReps": {
+            "min": 5,
+            "max": 10
+          },
+          "targetRir": 1.5,
+          "targetLoad": 75
+        },
+        {
+          "index": 2,
+          "targetReps": {
+            "min": 5,
+            "max": 10
+          },
+          "targetRir": 1.5,
+          "targetLoad": 75
+        }
+      ],
+      "rationale": [
+        {
+          "stage": "exercise_selection",
+          "code": "exercise.best_eligible_score",
+          "message": "Selected barbell_bench_press",
+          "facts": {
+            "primaryMuscle": "chest",
+            "eligibleCandidates": 7,
+            "score": 0.8,
+            "movementPattern": "horizontal_press"
+          }
+        },
+        {
+          "stage": "set_rep_load",
+          "code": "prescription.rules_applied",
+          "message": "Applied rep, RIR and rest rules",
+          "facts": {
+            "setCount": 2,
+            "repMin": 5,
+            "repMax": 10,
+            "targetRir": 1.5,
+            "restSeconds": 150,
+            "hasE1RM": true
+          }
+        }
+      ]
+    },
+    {
+      "exerciseSlug": "machine_shoulder_press",
+      "exerciseName": "Machine Shoulder Press",
+      "primaryMuscle": "front_delts",
+      "mechanic": "compound",
+      "order": 2,
+      "restSeconds": 120,
+      "sets": [
+        {
+          "index": 1,
+          "targetReps": {
+            "min": 8,
+            "max": 10
+          },
+          "targetRir": 1.5,
+          "targetLoad": null
+        },
+        {
+          "index": 2,
+          "targetReps": {
+            "min": 8,
+            "max": 10
+          },
+          "targetRir": 1.5,
+          "targetLoad": null
+        }
+      ],
+      "rationale": [
+        {
+          "stage": "exercise_selection",
+          "code": "exercise.best_eligible_score",
+          "message": "Selected machine_shoulder_press",
+          "facts": {
+            "primaryMuscle": "front_delts",
+            "eligibleCandidates": 3,
+            "score": 0.74,
+            "movementPattern": "vertical_press"
+          }
+        },
+        {
+          "stage": "set_rep_load",
+          "code": "prescription.rules_applied",
+          "message": "Applied rep, RIR and rest rules",
+          "facts": {
+            "setCount": 2,
+            "repMin": 8,
+            "repMax": 10,
+            "targetRir": 1.5,
+            "restSeconds": 120,
+            "hasE1RM": false
+          }
+        }
+      ]
+    },
+    {
+      "exerciseSlug": "machine_lateral_raise",
+      "exerciseName": "Machine Lateral Raise",
+      "primaryMuscle": "side_delts",
+      "mechanic": "isolation",
+      "order": 3,
+      "restSeconds": 75,
+      "sets": [
+        {
+          "index": 1,
+          "targetReps": {
+            "min": 12,
+            "max": 15
+          },
+          "targetRir": 1.5,
+          "targetLoad": null
+        },
+        {
+          "index": 2,
+          "targetReps": {
+            "min": 12,
+            "max": 15
+          },
+          "targetRir": 1.5,
+          "targetLoad": null
+        },
+        {
+          "index": 3,
+          "targetReps": {
+            "min": 12,
+            "max": 15
+          },
+          "targetRir": 1.5,
+          "targetLoad": null
+        }
+      ],
+      "rationale": [
+        {
+          "stage": "exercise_selection",
+          "code": "exercise.best_eligible_score",
+          "message": "Selected machine_lateral_raise",
+          "facts": {
+            "primaryMuscle": "side_delts",
+            "eligibleCandidates": 3,
+            "score": 0.37,
+            "movementPattern": "shoulder_abduction"
+          }
+        },
+        {
+          "stage": "set_rep_load",
+          "code": "prescription.rules_applied",
+          "message": "Applied rep, RIR and rest rules",
+          "facts": {
+            "setCount": 3,
+            "repMin": 12,
+            "repMax": 15,
+            "targetRir": 1.5,
+            "restSeconds": 75,
+            "hasE1RM": false
+          }
+        }
+      ]
+    },
+    {
+      "exerciseSlug": "overhead_cable_extension",
+      "exerciseName": "Overhead Cable Triceps Extension",
+      "primaryMuscle": "triceps",
+      "mechanic": "isolation",
+      "order": 4,
+      "restSeconds": 75,
+      "sets": [
+        {
+          "index": 1,
+          "targetReps": {
+            "min": 10,
+            "max": 10
+          },
+          "targetRir": 1.5,
+          "targetLoad": null
+        }
+      ],
+      "rationale": [
+        {
+          "stage": "exercise_selection",
+          "code": "exercise.best_eligible_score",
+          "message": "Selected overhead_cable_extension",
+          "facts": {
+            "primaryMuscle": "triceps",
+            "eligibleCandidates": 3,
+            "score": 0.47,
+            "movementPattern": "overhead_extension"
+          }
+        },
+        {
+          "stage": "set_rep_load",
+          "code": "prescription.rules_applied",
+          "message": "Applied rep, RIR and rest rules",
+          "facts": {
+            "setCount": 1,
+            "repMin": 10,
+            "repMax": 10,
+            "targetRir": 1.5,
+            "restSeconds": 75,
+            "hasE1RM": false
+          }
+        }
+      ]
+    }
+  ],
+  "rationale": [
+    {
+      "stage": "routine_selection",
+      "code": "routine.frequency_split",
+      "message": "Selected push from weekly frequency",
+      "facts": {
+        "frequency": 5,
+        "scheduleSlot": 0
+      }
+    },
+    {
+      "stage": "muscle_allocation",
+      "code": "muscle.routine_filter",
+      "message": "Filtered muscles for selected routine",
+      "facts": {
+        "candidateCount": 4,
+        "selectedCount": 4
+      }
+    },
+    {
+      "stage": "exercise_selection",
+      "code": "exercise.environment_filter",
+      "message": "Applied equipment and injury filters",
+      "facts": {
+        "availableEquipment": 8,
+        "selectedExercises": 4
+      }
+    },
+    {
+      "stage": "set_rep_load",
+      "code": "prescription.rule_set",
+      "message": "Applied rule set 1.0.0",
+      "facts": {
+        "exerciseCount": 4
+      }
+    },
+    {
+      "stage": "ordering_time_fitting",
+      "code": "ordering.compounds_first",
+      "message": "Ordered compounds and high-volume work first",
+      "facts": {
+        "exerciseCount": 4
+      }
+    },
+    {
+      "stage": "ordering_time_fitting",
+      "code": "time_fitting.budget",
+      "message": "Trimmed lowest-priority sets to time budget",
+      "facts": {
+        "minutesAvailable": 45,
+        "estimatedDurationMinutes": 13
+      }
+    }
+  ]
+}
